@@ -1,0 +1,6 @@
+{
+    "asi": false,
+    "forin": true,
+    "curly": true,
+    "strict": "global"
+} 

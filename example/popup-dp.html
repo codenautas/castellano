@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Diálogos en castellano</title>
+    <link rel="stylesheet" type="text/css" href="popup-dp.css">
+    <link rel="stylesheet" type="text/css" href="../node_modules/dialog-promise/lib/dialog-promise.css">
+  </head>
+  <body>
+    <h1>Diálogos en castellano</h1>
+    <p>
+      <button id=confirm_example1>Ejemplo de pregunta</button>
+    </p>
+    <p>Resultados:</p>
+    <pre id=results></pre>
+    <script src="../node_modules/es6-promise/dist/es6-promise.min.js"></script>
+    <script src="../node_modules/dialog-promise/lib/dialog-promise.js"></script>
+    <script src="../lib/cliente-en-castellano.js"></script>
+<script>
+
+window.addEventListener('load', function(){
+    results.textContent+='Iniciado';
+    confirm_example1.addEventListener('click', function(){
+        confirmPromise("¿Se ven las respuestas en castellano?").then(function(name){
+            return alertPromise("¡Claro que sí!");
+        }).then(function(){
+            button.textContent='¡vovler a probar!';
+        });
+    });
+});
+    
+</script>
+
+</body>
+</html>

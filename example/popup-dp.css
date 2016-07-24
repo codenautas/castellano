@@ -1,0 +1,7 @@
+.dialog-promise{
+    border: 1px solid blue;
+}
+
+.dialog-promise button[textContent=Sí]{
+    background-color:#DFD;
+}
