@@ -1,7 +1,7 @@
 {
   "name": "castellano",
   "description": "Mensajes en castellano para algunos módulos de node.js",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Codenautas <codenautas@googlegroups.com>",
   "repository": "codenautas/castellano",
   "license": "MIT",
