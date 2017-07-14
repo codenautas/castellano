@@ -1,6 +1,7 @@
 {
     "asi": false,
-    "forin": true,
+    "browser": true,
     "curly": true,
+    "forin": true,
     "strict": "global"
 } 

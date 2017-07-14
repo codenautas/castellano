@@ -3,7 +3,7 @@
 Mensajes en castellano para algunos módulos de node.js
 
 <!-- cucardas -->
-![designing](https://img.shields.io/badge/stability-designing-red.svg)
+![extending](https://img.shields.io/badge/stability-extending-orange.svg)
 [![npm-version](https://img.shields.io/npm/v/castellano.svg)](https://npmjs.org/package/castellano)
 [![downloads](https://img.shields.io/npm/dm/castellano.svg)](https://npmjs.org/package/castellano)
 [![build](https://img.shields.io/travis/codenautas/castellano/master.svg)](https://travis-ci.org/codenautas/castellano)
