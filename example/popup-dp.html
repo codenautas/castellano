@@ -21,10 +21,13 @@
 window.addEventListener('load', function(){
     results.textContent+='Iniciado';
     confirm_example1.addEventListener('click', function(){
-        confirmPromise("¿Se ven las respuestas en castellano?").then(function(name){
+        results.textContent='hizo click';
+        confirmPromise("¿Se ven las respuestas en castellano?").then(function(confirmed){
+            results.textContent='contestó la pregunta '+confirmed;
             return alertPromise("¡Claro que sí!");
         }).then(function(){
-            button.textContent='¡vovler a probar!';
+            results.textContent='aceptó';
+            confirm_example1.textContent='¡vovler a probar!';
         });
     });
 });

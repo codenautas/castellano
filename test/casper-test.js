@@ -23,16 +23,20 @@ casper.test.begin('Setup', function(test) {
         test.assertExists('#confirm_example1', 'have the button');
         test.assertDoesntExist('.dialog_promise', 'dialog not exists');
         clickOver('#confirm_example1');
-        this.capture('local-capture2.png');
-        
-        test.assertExists('.dialog-promise', 'dialog apears');
-        test.assertVisible('.dialog-promise', 'dialog is visible');
-        test.assertEval(function() {
-            return __utils__.findAll('.dialog-promise button').filter(function(button){
-                return button.textContent === 'Sí';
-            }).length===1;
-        });
         test.done();
+        return;
+        casper.wait(500, function() {
+        //casper.waitForSelector(".dialog-promise", function() {
+            this.capture('local-capture2.png');
+            test.assertExists('.dialog-promise', 'dialog apears');
+            test.assertVisible('.dialog-promise', 'dialog is visible');
+            test.assertEval(function() {
+                return __utils__.findAll('.dialog-promise button').filter(function(button){
+                    return button.textContent === 'Sí';
+                }).length===1;
+            });
+            test.done();
+        });
     }).run(function() {
         test.done();
     });
