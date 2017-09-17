@@ -1,7 +1,7 @@
 {
   "name": "castellano",
   "description": "Mensajes en castellano para algunos módulos de node.js",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "author": "Codenautas <codenautas@googlegroups.com>",
   "repository": "codenautas/castellano",
   "license": "MIT",
@@ -17,7 +17,7 @@
     "phantomjs-prebuilt": "~2.1.15",
     
     "best-globals": "~0.10.1",
-    "dialog-promise": "~0.8.0"
+    "dialog-promise": "~0.8.2"
   },
   "engines": {
     "node": ">= 0.12"
