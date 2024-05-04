@@ -1,11 +1,10 @@
 # castellano
-Mensajes en castellano para algunos módulos de node.js
+Mensajes en castellano para algunos módulos de node.js asociados a backend-plus
 
 ![extending](https://img.shields.io/badge/stability-extending-orange.svg)
 [![npm-version](https://img.shields.io/npm/v/castellano.svg)](https://npmjs.org/package/castellano)
 [![downloads](https://img.shields.io/npm/dm/castellano.svg)](https://npmjs.org/package/castellano)
 [![build](https://img.shields.io/travis/codenautas/castellano/master.svg)](https://travis-ci.org/codenautas/castellano)
-[![climate](https://img.shields.io/codeclimate/github/codenautas/castellano.svg)](https://codeclimate.com/github/codenautas/castellano)
 [![dependencies](https://img.shields.io/david/codenautas/castellano.svg)](https://david-dm.org/codenautas/castellano)
 [![qa-control](http://codenautas.com/github/codenautas/castellano.svg)](http://codenautas.com/github/codenautas/castellano)
 
