@@ -1,7 +1,7 @@
 {
   "name": "castellano",
   "description": "Mensajes en castellano para algunos módulos de node.js",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "Codenautas <codenautas@googlegroups.com>",
   "repository": "codenautas/castellano",
   "license": "MIT",
@@ -9,8 +9,7 @@
   "files": [
     "lib"
   ],
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "best-globals": "^2.0.7",
     "dialog-promise": "^0.10.5"
