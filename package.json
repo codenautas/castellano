@@ -12,8 +12,8 @@
   "dependencies": {
   },
   "devDependencies": {
-    "best-globals": "~2.0.1",
-    "dialog-promise": "~0.10.2"
+    "best-globals": "^2.0.7",
+    "dialog-promise": "^0.10.5"
   },
   "engines": {
     "node": ">= 16"
