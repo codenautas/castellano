@@ -11,14 +11,15 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "require-bro": "^0.3.6",
     "best-globals": "^2.0.7",
-    "dialog-promise": "^0.10.5"
+    "dialog-promise": "^0.10.5",
+    "puppeteer": "^25.0.4"
   },
   "engines": {
     "node": ">= 16"
   },
   "scripts": {
-    "test": "node test/start-tests.js",
-    "test-win": "test\\do-tests"
+    "test": "node --test test/puppeteer-test.js"
   }
 }
