@@ -3,11 +3,11 @@
 Mensajes en castellano para algunos módulos de node.js asociados a backend-plus
 
 <!-- cucardas -->
-![extending](https://img.shields.io/badge/stability-extending-orange.svg)
 [![npm-version](https://img.shields.io/npm/v/castellano.svg)](https://npmjs.org/package/castellano)
 [![downloads](https://img.shields.io/npm/dm/castellano.svg)](https://npmjs.org/package/castellano)
-[![build](https://github.com/codenautas/castellano/actions/workflows/node.js.yml/badge.svg)](https://github.com/codenautas/castellano/actions/workflows/node.js.yml)
-
+[![build](https://github.com/codenautas/castellano/actions/workflows/build-and-test.yml/badge.svg)](https://github.com/codenautas/castellano/actions/workflows/build-and-test.yml)
+[![security](https://socket.dev/api/badge/npm/package/castellano)](https://socket.dev/npm/package/castellano)
+[![qa-control](https://github.com/codenautas/castellano/actions/workflows/qa-control.yml/badge.svg)](https://github.com/codenautas/castellano/actions/workflows/qa-control.yml)
 
 <!--multilang buttons-->
 

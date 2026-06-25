@@ -14,12 +14,19 @@
     "require-bro": "^0.3.6",
     "best-globals": "^2.0.7",
     "dialog-promise": "^0.10.5",
-    "puppeteer": "^25.0.4"
+    "puppeteer": "^25.0.4",
+    "qa-control": "^0.6.16"
   },
   "engines": {
     "node": ">= 16"
   },
   "scripts": {
-    "test": "node --test test/puppeteer-test.js"
+    "test": "node --test test/puppeteer-test.js",
+    "test-ci": "npm test"
+  },
+  "qa-control": {
+    "run-in": "client",
+    "type": "lib",
+    "gha": "all"
   }
 }
