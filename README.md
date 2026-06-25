@@ -34,4 +34,3 @@ function el_ejemplo(button){
 ## License
 
 [MIT](LICENSE)
-

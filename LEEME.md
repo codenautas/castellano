@@ -45,4 +45,3 @@ function el_ejemplo(button){
 [!--lang:*-->
 
 [MIT](LICENSE)
-
