@@ -12,10 +12,10 @@
   "dependencies": {},
   "devDependencies": {
     "require-bro": "^0.3.6",
-    "best-globals": "^2.0.7",
-    "dialog-promise": "^0.10.5",
-    "puppeteer": "^25.0.4",
-    "qa-control": "^0.6.16"
+    "best-globals": "^2.2.2",
+    "dialog-promise": "^0.10.7",
+    "puppeteer": "^25.2.1",
+    "qa-control": "^0.7.1"
   },
   "engines": {
     "node": ">= 16"

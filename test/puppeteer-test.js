@@ -9,7 +9,7 @@ const puppeteer = require('puppeteer');
 const url = pathToFileURL(path.resolve(__dirname, '../example/popup-dp.html')).href;
 
 test('los diálogos se ven en castellano', async function(){
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch(process.env.CI ? { args: ['--no-sandbox', '--disable-setuid-sandbox'] } : undefined);
     try{
         const page = await browser.newPage();
         await page.goto(url);
