@@ -25,7 +25,7 @@ async function writeCoverage(page){
     await converter.load();
     converter.applyCoverage(entry.rawScriptCoverage.functions);
     const coverageMap = libCoverage.createCoverageMap(converter.toIstanbul());
-    const context = libReport.createContext({ dir: path.resolve(process.cwd(), '.coverage'), coverageMap: coverageMap });
+    const context = libReport.createContext({ dir: path.resolve(process.cwd(), 'coverage'), coverageMap: coverageMap });
     reports.create('lcovonly').execute(context);
 }
 
