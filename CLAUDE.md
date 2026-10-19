@@ -17,13 +17,14 @@ traducción que verifica el test.
 
 ## Tests
 
-`npm test` corre [test/puppeteer-test.js](test/puppeteer-test.js) con `node --test` + Puppeteer:
-abre [example/popup-dp.html](example/popup-dp.html) por `file://`, clickea el botón, espera
-`.dialog-promise` y asserta que hay exactamente un botón con texto `Sí`.
+`npm test` corre [test/test-castellano.js](test/test-castellano.js) en Chrome y Firefox con
+`server4test --run-browser` (mocha en el navegador). La página de tests carga los scripts de
+[server4test-config.yaml](server4test-config.yaml) en el mismo orden que el ejemplo (ver abajo),
+con `cliente-en-castellano` instrumentado por `nyc` para medir la cobertura. El test abre un
+`confirmPromise` y asserta que hay exactamente un botón `Sí` y uno `No`, además de probar
+`setClientToSpanish` con módulos de prueba.
 
-Antes los tests eran de CasperJS/PhantomJS/SlimerJS (ya inexistentes). Además las aserciones
-reales de Casper estaban en **código muerto** (atrás de un `return`), así que el diálogo nunca
-se probó de verdad. El test de Puppeteer reconstruye esa aserción que se quería hacer.
+[example/popup-dp.html](example/popup-dp.html) queda como demo manual.
 
 ## Cómo se carga el ejemplo en el navegador (importante)
 

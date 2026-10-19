@@ -9,24 +9,30 @@
   "files": [
     "lib"
   ],
+  "overrides": {
+    "@istanbuljs/load-nyc-config": {
+      "js-yaml": "^4.1.0"
+    }
+  },
   "dependencies": {},
   "devDependencies": {
-    "require-bro": "^0.3.6",
-    "best-globals": "^2.2.2",
-    "dialog-promise": "^0.10.7",
-    "puppeteer": "^25.2.1",
-    "qa-control": "^0.7.1",
-    "v8-to-istanbul": "^9.3.0",
-    "istanbul-lib-coverage": "^3.2.2",
-    "istanbul-lib-report": "^3.0.1",
-    "istanbul-reports": "^3.1.7"
+    "require-bro": "^0.4.1",
+    "best-globals": "^2.2.3",
+    "dialog-promise": "^0.11.1",
+    "mocha": "^12.0.3",
+    "nyc": "^18.0.0",
+    "qa-control": "^0.14.1",
+    "server4test": "^2.0.0"
   },
   "engines": {
     "node": ">= 16"
   },
   "scripts": {
-    "test": "node --test test/puppeteer-test.js",
-    "test-ci": "npm test"
+    "build-test": "nyc instrument --delete lib local-instrumented/lib",
+    "test": "npm run test-navigator",
+    "test-ci": "npm run test-navigator && nyc report --reporter=lcov --reporter=text",
+    "test-navigator": "npm run build-test && server4test --run-browser chrome,firefox",
+    "test-navigator-inf": "npm run build-test && server4test"
   },
   "qa-control": {
     "run-in": "client",
